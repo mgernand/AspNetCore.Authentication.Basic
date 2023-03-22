@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{CF13271D-BF3F-4167-BEBA-DD02D33992F2}"
-	ProjectSection(SolutionItems) = preProject
-		samples\BasicSamplesClient.postman_collection.json = samples\BasicSamplesClient.postman_collection.json
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".items", ".items", "{7BFEA4E3-5506-40A1-B6EB-BC8BA3687D23}"
 	ProjectSection(SolutionItems) = preProject
