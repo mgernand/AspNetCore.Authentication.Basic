@@ -18,7 +18,7 @@
 			this.userRepository = userRepository;
 		}
 
-		public async Task<MadEyeMatt.AspNetCore.Authentication.Basic.IBasicUser> AuthenticateAsync(string username, string password)
+		public async Task<IBasicUser> AuthenticateAsync(string username, string password)
 		{
 			try
 			{

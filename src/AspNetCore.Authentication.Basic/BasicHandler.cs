@@ -30,9 +30,8 @@ namespace MadEyeMatt.AspNetCore.Authentication.Basic
 		/// <param name="options"></param>
 		/// <param name="logger"></param>
 		/// <param name="encoder"></param>
-		/// <param name="clock"></param>
-		public BasicHandler(IOptionsMonitor<BasicOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)
-			: base(options, logger, encoder, clock)
+		public BasicHandler(IOptionsMonitor<BasicOptions> options, ILoggerFactory logger, UrlEncoder encoder)
+			: base(options, logger, encoder)
 		{
 		}
 

@@ -11,10 +11,13 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 // Add User repository to the dependency container.
 builder.Services.AddTransient<IUserRepository, InMemoryUserRepository>();
 
-// Add the Basic scheme authentication here..
+// Add the Basic scheme authentication here...
 // It requires Realm to be set in the options if SuppressWWWAuthenticateHeader is not set.
-// If an implementation of IBasicUserValidationService interface is registered in the dependency register as well as OnValidateCredentials delegete on options.Events is also set then this delegate will be used instead of an implementation of IBasicUserValidationService.
-builder.Services.AddAuthentication(BasicDefaults.AuthenticationScheme).AddBasic<BasicUserAuthenticationService>(options =>
+// If an implementation of IBasicUserValidationService interface is registered in the dependency register as well as OnValidateCredentials delegate on options.
+// Events is also set then this delegate will be used instead of an implementation of IBasicUserValidationService.
+builder.Services
+	.AddAuthentication(BasicDefaults.AuthenticationScheme)
+	.AddBasic<BasicUserAuthenticationService>(options =>
 {
 	options.Realm = "Sample Web API";
 
