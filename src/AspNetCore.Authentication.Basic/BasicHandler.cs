@@ -24,6 +24,7 @@ namespace MadEyeMatt.AspNetCore.Authentication.Basic
 	/// </summary>
 	public class BasicHandler : AuthenticationHandler<BasicOptions>
 	{
+#if NET8_0_OR_GREATER
 		/// <summary>
 		///     Basic Handler Constructor.
 		/// </summary>
@@ -34,6 +35,21 @@ namespace MadEyeMatt.AspNetCore.Authentication.Basic
 			: base(options, logger, encoder)
 		{
 		}
+#endif
+
+#if NET6_0 || NET7_0
+		/// <summary>
+		///		 Basic Handler Constructor.
+		/// </summary>
+		/// <param name="options"></param>
+		/// <param name="logger"></param>
+		/// <param name="encoder"></param>
+		/// <param name="systemClock"></param>
+		public BasicHandler(IOptionsMonitor<BasicOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock systemClock)
+			: base(options, logger, encoder, systemClock)
+		{
+		}
+#endif
 
 		private string Challenge => $"{BasicDefaults.AuthenticationScheme} realm=\"{this.Options.Realm}\", charset=\"UTF-8\"";
 
