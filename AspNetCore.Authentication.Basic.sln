@@ -15,6 +15,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F7494366-ED1D-4342-AE5D-DD6BE67C63DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D8E6E00-C6F6-43D2-8F6E-2923C05BF17D}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Authentication.Basic", "src\AspNetCore.Authentication.Basic\AspNetCore.Authentication.Basic.csproj", "{E22A7E69-C03B-4EA3-A792-4AE772A47F9E}"
 EndProject
