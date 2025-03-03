@@ -39,7 +39,7 @@
 	<PropertyGroup>
 		<Product>AspNetCore.Authentication.Basic</Product>
 		<AssemblyTitle>AspNetCore.Authentication.Basic</AssemblyTitle>
-		<Copyright>Copyright © 2022-2024 Mihir Dilip, Matthias Gernand. All rights reserved.</Copyright>
+		<Copyright>Copyright © 2022-2025 Mihir Dilip, Matthias Gernand. All rights reserved.</Copyright>
 	</PropertyGroup>
 
 </Project>
