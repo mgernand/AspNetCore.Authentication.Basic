@@ -1,7 +1,7 @@
 # AspNetCore.Authentication.Basic
 Easy to use and very light weight Microsoft style Basic Scheme Authentication Implementation for ASP.NET Core.
 
-[View On GitHub](https://github.com/mgernand/AspNetCore.Authentication.Basic)
+## This repository was moved to https://codeberg.org/mgernand/AspNetCore.Authentication.Basic
 
 <br/> 
 
